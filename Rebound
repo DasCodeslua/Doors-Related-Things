@@ -4,7 +4,7 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Chron
 -- Create entity
 local entity = Creator.createEntity({
     CustomName = "Matcher", -- Custom name of your entity
-    Model = "rbxassetid://9022689073", -- Can be GitHub file or rbxassetid
+    Model = "rbxassetid://11459817091", -- Can be GitHub file or rbxassetid
     Speed = 200, -- Percentage, 100 = default Rush speed
     DelayTime = 1.5, -- Time before starting cycles (seconds)
     HeightOffset = 0,
@@ -13,11 +13,11 @@ local entity = Creator.createEntity({
     BackwardsMovement = false,
     FlickerLights = {
         true, -- Enabled/Disabled
-        60, -- Time (seconds)
+        15, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
-        Max = 1,
+        Min = 3,
+        Max = 3,
         WaitTime = 3,
     },
     CamShake = {
@@ -28,8 +28,8 @@ local entity = Creator.createEntity({
     Jumpscare = {
         true, -- Enabled/Disabled
         {
-            Image1 = "rbxassetid://11287256504", -- Image1 url
-            Image2 = "rbxassetid://11287256504", -- Image2 url
+            Image1 = "rbxassetid://11459817091", -- Image1 url
+            Image2 = "rbxassetid://11459817091", -- Image2 url
             Shake = true,
             Sound1 = {
                 3359047385, -- SoundId
@@ -50,7 +50,7 @@ local entity = Creator.createEntity({
             },
         },
     },
-    CustomDialog = {"You died to who you call Matcher.", "Hide if Lights Flicker Too much!"}, -- Custom death message
+    CustomDialog = {"You died to who you call Rebound.", "Hide if Lights Flicker Too much!"}, -- Custom death message
 })
 
 -----[[ Advanced ]]-----
