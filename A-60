@@ -3,8 +3,8 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Chron
 
 -- Create entity
 local entity = Creator.createEntity({
-    CustomName = "Depth", -- Custom name of your entity
-    Model = "rbxassetid://11524906962", -- Can be GitHub file or rbxassetid
+    CustomName = "A-60", -- Custom name of your entity
+    Model = "rbxassetid://11573495258", -- Can be GitHub file or rbxassetid
     Speed = 250, -- Percentage, 100 = default Rush speed
     DelayTime = 1.5, -- Time before starting cycles (seconds)
     HeightOffset = 0,
@@ -13,7 +13,7 @@ local entity = Creator.createEntity({
     BackwardsMovement = false,
     FlickerLights = {
         true, -- Enabled/Disabled
-        10, -- Time (seconds)
+        60, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
