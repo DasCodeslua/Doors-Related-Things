@@ -3,7 +3,7 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Chron
 
 -- Create entity
 local entity = Creator.createEntity({
-    CustomName = "Matcher", -- Custom name of your entity
+    CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://11459817091", -- Can be GitHub file or rbxassetid
     Speed = 200, -- Percentage, 100 = default Rush speed
     DelayTime = 1.5, -- Time before starting cycles (seconds)
