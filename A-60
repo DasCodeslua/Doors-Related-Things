@@ -5,7 +5,7 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Chron
 local entity = Creator.createEntity({
     CustomName = "A-60", -- Custom name of your entity
     Model = "rbxassetid://11573495258", -- Can be GitHub file or rbxassetid
-    Speed = 250, -- Percentage, 100 = default Rush speed
+    Speed = 6666, -- Percentage, 100 = default Rush speed
     DelayTime = 1.5, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     KillRange = 50,
@@ -16,7 +16,7 @@ local entity = Creator.createEntity({
         60, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
+        Min = 8,
         Max = 8,
         WaitTime = 4,
     },
