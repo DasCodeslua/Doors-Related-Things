@@ -5,7 +5,7 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Chron
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://11459817091", -- Can be GitHub file or rbxassetid
-    Speed = 200, -- Percentage, 100 = default Rush speed
+    Speed = 1000, -- Percentage, 100 = default Rush speed
     DelayTime = 1.5, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     KillRange = 50,
@@ -13,7 +13,7 @@ local entity = Creator.createEntity({
     BackwardsMovement = false,
     FlickerLights = {
         true, -- Enabled/Disabled
-        15, -- Time (seconds)
+        2, -- Time (seconds)
     },
     Cycles = {
         Min = 3,
