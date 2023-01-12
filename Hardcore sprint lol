@@ -1,0 +1,33 @@
+local CAS = game:GetService("ContextActionService")
+
+
+
+	CAS:BindAction("Sprint", sprint, true, bind1, bind2) -- Binds the keybinds to the sprint function and creates a mobile button for it
+
+
+	CAS:SetPosition("Sprint", UDim2.new(0.7,0,0,0)) -- Changes the position of the mobile button within the context frame, to read more about how UDim2 positions work, go to https://developer.roblox.com/en-us/api-reference/datatype/UDim2
+
+
+	CAS:SetTitle("Sprint", "Shift") -- Sets the text on the mobile button, replace Ctrl with any text you desire
+
+
+end
+
+
+coroutine.wrap(QCHWWK_fake_script)()
+
+
+function CJZEISY_fake_script() -- SideBar.LocalScript 
+
+
+	local script = Instance.new('LocalScript', SideBar)
+
+
+
+	script.Parent.Visible = false
+
+
+end
+
+
+coroutine.wrap(CJZEISY_fake_script)()
