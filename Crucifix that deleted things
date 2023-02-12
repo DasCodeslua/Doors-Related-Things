@@ -1,0 +1,71 @@
+local tool : Tool = game:GetObjects("rbxassetid://12367191934")[1]
+local handle : Part = tool.Handle
+local player = game.Players.LocalPlayer
+tool.Parent = player.Backpack
+
+--local An = Instance.new("Animation")
+--An.AnimationId = "rbxassetid://10069954661"
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool.Equipped:Connect(function(mouse)
+    anim = player.Character.Humanoid:LoadAnimation(tool.Animations.idle)
+    anim:Play()
+end)
+
+tool.Unequipped:Connect(function()
+    anim:Stop()
+end)
+
+start = false
+durability = 100
+max = 100
+--tool.CanBeDropped = true
+-- tool:SetAttribute("DurabilityMax", max)
+-- tool:SetAttribute("Durability", durability)
+tool.Activated:Connect(function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+    thing = mouse.Target
+    if thing then
+    handle.Charge:Play()
+    -- if tool:GetAttribute("Durability") <= 0 then
+    handle.Parent = workspace
+    tool.Parent = game.ReplicatedStorage
+    handle.Anchored = true
+    handle.Transparency = 1
+    handle.Orientation = Vector3.new(0,0,0)
+    start = true
+    handle.Glow.Transparency = 0
+    handle.Glow.Orientation = Vector3.new(0,0,0)
+    handle.Sound:Play()
+    repeat wait() until acceleration >= 50
+    thing:Destroy()
+    end
+    -- end
+    -- durability -= 12
+    -- tool:SetAttribute("Durability",durability)
+    -- workspace.CurrentCamera.Screech
+    -- game.ReplicatedStorage.EntityInfo.Screech:FireServer(true);
+    --firesignal(game.ReplicatedStorage.EntityInfo.Screech.OnClientEvent,false)
+end)
+
+game["Run Service"].Heartbeat:Connect(function()
+if not handle  then
+    return
+elseif not handle.Glow then
+    return
+elseif not tool then
+    return
+end
+    if start == true then
+        acceleration += 0.15
+        
+        handle.Glow.Orientation += Vector3.new(0,acceleration,0)
+        if acceleration >= 50 then
+            handle:Destroy()
+            -- thing:Destroy()
+        end
+    else
+        acceleration = 0
+        handle.Glow.Transparency = 1
+    end
+end)
