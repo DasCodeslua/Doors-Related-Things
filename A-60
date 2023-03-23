@@ -1,17 +1,19 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'u should hide lmao',true,5)
+wait(0.5)
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 
 -- Create entity
 local entityTable = Spawner.createEntity({
     CustomName = "A-60", -- Custom name of your entity
-    Model = "rbxassetid://12402233473", -- Can be GitHub file or rbxassetid
-    Speed = 4060, -- Percentage, 100 = default Rush speed
-    DelayTime = 6, -- Time before starting cycles (seconds)
+    Model = "rbxassetid://12567399636", -- Can be GitHub file or rbxassetid
+    Speed = 100000, -- Percentage, 100 = default Rush speed
+    DelayTime = 3, -- Time before starting cycles (seconds)
     HeightOffset = 0,
-    CanKill = true,
-    KillRange = 50,
+    CanKill = false,
+    KillRange = 10,
     BackwardsMovement = false,
-    BreakLights = true,
+    BreakLights = false,
     FlickerLights = {
         true, -- Enabled/Disabled
         3, -- Time (seconds)
