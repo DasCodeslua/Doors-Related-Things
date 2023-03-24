@@ -329,7 +329,17 @@ dupeCrucifix.Event:Connect(function(time, entityRoot)
     -- hl.FillTransparency = 1
     -- hl.OutlineColor = Color3.fromRGB(75, 177, 255)
     fakeCross.Anchored = true
+-- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "I rule there!",
+    Desc = "Banish A Monster with the crucifix",
+    Reason = 'You banished',
+    Image = "https://static.wikia.nocookie.net/doors-ideas/images/d/d7/Mortis.png/revision/latest?cb=20230209191027",
+})
+wait(0.1)
     CrucifixTool:Destroy()
 
     -- for i, v in pairs(fakeCross:GetChildren()) do
