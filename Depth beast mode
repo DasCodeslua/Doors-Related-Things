@@ -1,3 +1,5 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'T H E B E A S T I S C O M I N G',true,5)
+wait(0.5)
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 
@@ -17,8 +19,8 @@ local entityTable = Spawner.createEntity({
         3, -- Time (seconds)
     },
     Cycles = {
-        Min = 10,
-        Max = 20,
+        Min = 6,
+        Max = 9,
         WaitTime = 3,
     },
     CamShake = {
