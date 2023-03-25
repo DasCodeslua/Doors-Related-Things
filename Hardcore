@@ -44,3 +44,13 @@ local a = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.
 end
     end
 end)()
+coroutine.wrap(function()
+    while true do
+        wait(math.random(20,40))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait(0.5)
+if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/Crucifix"))()
+end
+    end
+end)()
