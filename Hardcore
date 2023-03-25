@@ -1,6 +1,6 @@
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Hardcore Started.',true,5)
 wait(4)
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Made By Das on discord',true,5)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Made By Das on discord, YT name: Japanito',true,5)
 wait(5)
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Special Thanks To Depth On yt And DC for Random spawn entitys.',true,5)
 wait(0.5)
