@@ -1,0 +1,46 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Hardcore Started.',true,5)
+wait(4)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Made By Das on discord',true,5)
+wait(5)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Special Thanks To Depth On yt And DC for Random spawn entitys.',true,5)
+wait(0.5)
+coroutine.wrap(function()
+    while true do
+        wait(math.random(55,250))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait(0.5)
+if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/Depth%20beast%20mode"))()
+end
+    end
+end)()
+coroutine.wrap(function()
+    while true do
+        wait(math.random(55,125))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait(0.5)
+if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/A-60%20can%20kill"))()
+end
+    end
+end)()
+coroutine.wrap(function()
+    while true do
+        wait(math.random(55,200))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait(0.5)
+if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/Rebound"))()
+end
+    end
+end)()
+coroutine.wrap(function()
+    while true do
+        wait(math.random(20,40))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+wait(0.5)
+if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+local a = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules["A90"])(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game))()
+end
+    end
+end)()
