@@ -1,3 +1,5 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Your soul bright and you were given a crucifix',true,5)
+wait(0.5)
 local function IsVisible(part)
     local vec, found=workspace.CurrentCamera:WorldToViewportPoint(part.Position)
     local onscreen = found and vec.Z > 0
