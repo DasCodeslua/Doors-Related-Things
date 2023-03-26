@@ -54,13 +54,3 @@ loadstring(game:HttpGet("https://https://raw.githubusercontent.com/DasCodeslua/D
 end
     end
 end)()
-coroutine.wrap(function()
-    while true do
-        wait(math.random(55,110))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-wait(0.5)
-if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-local a = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules["A90"])(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game))()
-end
-    end
-end)()
