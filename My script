@@ -2,17 +2,9 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Doors Function Entity Spawner and Items", "DarkTheme")
 local Tab = Window:NewTab("Items")
 local Section = Tab:NewSection("Items Here")
-Section:NewButton("Crucifix Old", "Old Crucifix duhh", function()
+Section:NewButton("Crucifix", "Crucifix duhh", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/Crucifix"))()
     print("working")
-end)
-Section:NewButton("Crucifix Hotel+", "Press Q on Keyboard to use it on anything", function()
-_G.Uses = 1
-_G.Range = 30
-_G.OnAnything = true
-_G.Fail = false
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
-    print("Crucifix Hotel+ working")
 end)
 local Tab = Window:NewTab("Entitys Spawn")
 local Section = Tab:NewSection("Entitys spawn lol")
