@@ -22,7 +22,7 @@ local entityTable = Spawner.createEntity({
     },
     Cycles = {
         Min = 3,
-        Max = 6,
+        Max = 3,
         Delay = 2
     },
     CamShake = {
@@ -30,9 +30,9 @@ local entityTable = Spawner.createEntity({
         Values = {3.5, 20, 0.1, 1},
         Range = 100
     },
-    ResistCrucifix = true,
-    BreakCrucifix = true,
-    DeathMessage = {},
+    ResistCrucifix = false,
+    BreakCrucifix = false,
+    DeathMessage = {Try Hiding Next Time buckaroo},
     IsCuriousLight = true
 })
 
