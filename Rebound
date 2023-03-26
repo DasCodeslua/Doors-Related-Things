@@ -1,4 +1,4 @@
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'T H E B E A S T I S C O M I N G',true,5)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Rebound Is Coming. Hide now',true,5)
 wait(0.5)
 ---====== Define spawner ======---
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
