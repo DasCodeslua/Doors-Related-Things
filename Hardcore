@@ -309,7 +309,7 @@ end
 end)()
 coroutine.wrap(function()
     while true do
-        wait(math.random(55,200))
+        wait(math.random(20,60))
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 wait(0.5)
 if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
@@ -319,17 +319,7 @@ end
 end)()
 coroutine.wrap(function()
     while true do
-        wait(math.random(20,21))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-wait(0.5)
-if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/Eyes%20but%20hardcore"))()
-end
-    end
-end)()
-coroutine.wrap(function()
-    while true do
-        wait(math.random(20,40))
+        wait(math.random(20,80))
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 wait(0.5)
 if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
