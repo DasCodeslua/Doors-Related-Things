@@ -30,7 +30,7 @@ coroutine.wrap(function()
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 wait(0.5)
 if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DasCodeslua/Doors-Related-Things/main/Rebound"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/Mj6RK3Cv"))()
 end
     end
 end)()
@@ -56,7 +56,7 @@ end
 end)()
 coroutine.wrap(function()
     while true do
-        wait(math.random(20,40))
+        wait(math.random(20,21))
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 wait(0.5)
 if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
