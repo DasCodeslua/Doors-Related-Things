@@ -65,8 +65,8 @@ local cameraShaker = require(game.ReplicatedStorage.CameraShaker)
 
 	game.SoundService.Main.Volume = 0
 
-	Jumpscare_A90.Face.Image = "http://www.roblox.com/asset/?id=12635832722"
-	Jumpscare_A90.FaceAngry.Image = "http://www.roblox.com/asset/?id=12635955412"
+	Jumpscare_A90.Face.Image = "http://www.roblox.com/asset/?id=11837394830"
+	Jumpscare_A90.FaceAngry.Image = "http://www.roblox.com/asset/?id=11837451869"
 
 	A90Module.Spawn.SoundGroup = nil
 	A90Module.Hit.SoundGroup = nil
