@@ -375,16 +375,6 @@ end
 end)()
 coroutine.wrap(function()
     while true do
-        wait(math.random(20,80))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-wait(0.5)
-if workspace:FindFirstChild("SeekMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SernoxSergal/Sernox-s-Door-Gui/main/InfiniteFlashlight.lua"))()
-end
-    end
-end)()
-coroutine.wrap(function()
-    while true do
         wait(math.random(20,50))
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 wait(0.5)
