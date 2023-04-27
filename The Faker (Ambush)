@@ -8,7 +8,7 @@ local entity = Spawner.createEntity({
     CustomName = "Ambush?",
     Model = "https://github.com/RegularVynixu/Utilities/blob/main/Doors/Entity%20Spawner/Assets/Entities/Ambush.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 1000,
-    MoveDelay = 2,
+    MoveDelay = 6,
     HeightOffset = 0,
     CanKill = true,
     KillRange = 100,
